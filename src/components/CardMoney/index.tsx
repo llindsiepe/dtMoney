@@ -1,4 +1,3 @@
-import React from "react";
 import { Container, MoneyIn, Title, MoneyOut, TitleOut } from "./styles";
 
 interface Money {
@@ -17,7 +16,7 @@ export function CardMoney(props: Money) {
             <h5>{props.title}</h5>
             <img src={props.img} width="25rem" />
           </TitleOut>
-          <h2>{props.price}</h2>
+          <h2>R${props.price}</h2>
         </MoneyOut>
       ) : (
         <>
@@ -26,7 +25,7 @@ export function CardMoney(props: Money) {
               <h5>{props.title}</h5>
               <img src={props.img} width="25rem" />
             </Title>
-            <h2>{props.price}</h2>
+            <h2>R${props.price}</h2>
           </MoneyIn>
         </>
       )}

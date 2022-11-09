@@ -72,11 +72,12 @@ const colors = {
   red: "#E52E4D",
 };
 
-export const RadioBox = styled.button<RadioBoxProps>`
+export const RadioBox = styled.div<RadioBoxProps>`
   gap: 1rem;
   height: 4rem;
   border: 1px solid #d7d7d7;
   border-radius: 0.25rem;
+  cursor: pointer;
 
   background: ${(props) =>
     props.isActive
